@@ -22,7 +22,7 @@ export const Login: React.FC = () => {
         .post("login", data)
         .then((response) => {
           toast.success("Login realizado com sucesso!");
-          navigate("/");
+          navigate("/dashboard");
         })
         .catch((error) => {
           toast.error("Ops.. Algo deu errado!");
